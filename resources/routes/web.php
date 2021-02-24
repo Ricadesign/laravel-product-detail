@@ -1,3 +1,3 @@
 <?php
 
-Route::get('/{id}','ProductDetailController@show');
+Route::get('/{id}','ProductDetailController@show')->name('product');
