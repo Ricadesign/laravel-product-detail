@@ -1,0 +1,31 @@
+{
+    "name": "ricadesign/laravel-product-detail",
+    "description": "Product detail main structure view",
+    "type": "library",
+    "require": {
+        "php": "^7.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "10.0.x-dev"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Ricadesign\\LaravelProductDetail\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ricadesign\\LaravelProductDetail\\LaravelProductDetailServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "Joel Pérez Alava",
+            "email": "jperez@rica.design"
+        }
+    ],
+    "minimum-stability": "dev"
+}
