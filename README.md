@@ -22,10 +22,10 @@ Next, if using Laravel 5, include the service provider within your `config/app.p
 
 ## Publishing all needed stuff
 
-In order for the package to work properly, it is needed publish view, sass file and controller:
+In order for the package to work properly, it is needed publish view and sass file:
 
 ```bash
-php artisan vendor:publish --tag=product[config-sass-view-controller]
+php artisan vendor:publish --tag=product[config-sass-view]
 ```
 
 You can also publish migration and model in case you need them:
