@@ -60,7 +60,8 @@ class LaravelProductDetailServiceProvider extends ServiceProvider
     private function routeConfiguration()
     {
         return [
-            'prefix' => Product::path()
+            'prefix' => Product::path(),
+            'namespace' => 'App\Http\Controllers'
         ];
     }
 
