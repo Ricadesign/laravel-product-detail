@@ -61,7 +61,7 @@ class LaravelProductDetailServiceProvider extends ServiceProvider
     {
         return [
             'prefix' => Product::path(),
-            'namespace' => 'App\Http\Controllers'
+            'namespace' => 'Ricadesign\LaravelProductDetail'
         ];
     }
 
