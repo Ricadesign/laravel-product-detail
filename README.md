@@ -25,7 +25,7 @@ Next, if using Laravel 5, include the service provider within your `config/app.p
 In order for the package to work properly, it is needed publish view, sass file and controller:
 
 ```bash
-php artisan vendor:publish
+php artisan vendor:publish --tag=product[config-sass-view-controller]
 ```
 
 You can also publish migration and model in case you need them:
@@ -37,5 +37,6 @@ php artisan vendor:publish --tag=product[migration-model]
 ## Usage
 
 Once installed you can navigate to **/product/{id}**. A product detail's mock up will be displayed, fully customizable by views/vendor/product/indexphp and sass/vendor/product/product-detail.scss previously published.
+
 
 You can change the path from product.php published in config directory.
