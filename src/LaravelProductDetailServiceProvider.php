@@ -60,8 +60,7 @@ class LaravelProductDetailServiceProvider extends ServiceProvider
     private function routeConfiguration()
     {
         return [
-            'prefix' => Product::path(),
-            'namespace' => 'Ricadesign\LaravelProductDetail'
+            'prefix' => Product::path()
         ];
     }
 
