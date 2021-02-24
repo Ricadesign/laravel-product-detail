@@ -33,7 +33,7 @@ class LaravelProductDetailServiceProvider extends ServiceProvider
     {
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'product');
 
-        // $this->registerRoutes();
+        $this->registerRoutes();
     }
     
     protected function registerPublishing()
