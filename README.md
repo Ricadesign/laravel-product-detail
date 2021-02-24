@@ -40,3 +40,7 @@ Once installed you can navigate to **/product/{id}**. A product detail's mock up
 
 
 You can change the path from product.php published in config directory.
+
+## Future implementation
+
+Automatically check if migration products is already created to publish or not migrations.
