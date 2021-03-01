@@ -2,12 +2,6 @@
     "name": "ricadesign/laravel-product-detail",
     "description": "Product detail main structure view",
     "type": "library",
-    "require": {
-        "php": "^7.4"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "10.0.x-dev"
-    },
     "license": "MIT",
     "autoload": {
         "psr-4": {
