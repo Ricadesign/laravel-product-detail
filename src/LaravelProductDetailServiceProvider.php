@@ -4,6 +4,7 @@ namespace Ricadesign\LaravelProductDetail;
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
+use App\Models\Product;
 
 class LaravelProductDetailServiceProvider extends ServiceProvider 
 {
@@ -33,7 +34,7 @@ class LaravelProductDetailServiceProvider extends ServiceProvider
     {
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'product');
 
-        // $this->registerRoutes();
+        $this->registerRoutes();
     }
     
     protected function registerPublishing()
@@ -52,7 +53,7 @@ class LaravelProductDetailServiceProvider extends ServiceProvider
     
     protected function registerRoutes()
     {
-        Route::group($this->routeConfiguration(), function(){
+        Route::group(function(){
             $this->loadRoutesFrom(__DIR__.'/../resources/routes/web.php');
         });
     }
@@ -60,8 +61,7 @@ class LaravelProductDetailServiceProvider extends ServiceProvider
     private function routeConfiguration()
     {
         return [
-            'prefix' => Product::path(),
-            'namespace' => 'Ricadesign\LaravelProductDetail'
+            'prefix' => Product::path()
         ];
     }
 
