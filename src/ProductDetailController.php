@@ -8,7 +8,7 @@ class ProductDetailController extends Controller
 {
     public function show($id)
     {
-        $product = Product::find($id);
+        $product = Product::findOrFail($id);
         return view('product::index', ['product' => $product]);
     }
 }
