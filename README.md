@@ -1,6 +1,4 @@
-# Laravel Coupon
-
-This composer package offers a setup to redeem coupon codes on ecommerce sites. It enables the use of several types of discounts, while offering the possibility of limiting user redemption by different means.
+# Laravel Product Detail
 
 This composer package offers a basic setup for displaying product detail page.
 
@@ -25,7 +23,7 @@ Next, if using Laravel 5, include the service provider within your `config/app.p
 In order for the package to work properly, it is needed publish view and sass file:
 
 ```bash
-php artisan vendor:publish --tag=product[config-sass-view]
+php artisan vendor:publish --tag=product[config-sass-view-controller]
 ```
 
 You can also publish migration and model in case you need them:
